@@ -56,7 +56,7 @@ export default {
     const imgSrc = ref(props.logoSrc);
     const image = ref(null);
 
-    const MAX_FILE_SIZE = 10240;
+    const MAX_FILE_SIZE = 10485760; // 10 мб в байтах
 
     const fileOnload = (file) => {
       if (file.size > MAX_FILE_SIZE) {
